@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42d9d0d3c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo_.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portofolio.html">Portofolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Beautiful Websites: 6 Tips for Attractive Website Design</h1>
+    </section>
+
+    <!-- Blog Page Content -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/blog.jpg">
+                <h2>Beautiful Websites: 6 Tips for Attractive Website Design</h2>
+                <p>Did you know that <b>48 percent of people</b> say that a website’s design is the number one
+                    determining
+                    factor for the credibility of a business? Your audience’s first impression comes from your website’s
+                    design. Beautiful websites are crucial for making an impactful and positive first impression for
+                    your audience.</p><br>
+                <p>On this page, we’ll provide you with six tips for creating beautiful websites. Keep reading to learn
+                    more about how to create a visually appealing and functional website for your audience.</p><br>
+                <p></p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Enter Your Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Web Design</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Good Design</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Attractive Web Design</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>7 Principles</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Web Design Development</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Build Your Website</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Beatiful Website</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About</h4>
+        <p>Thank You for coming to my Website. Go visit my other Website.</p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Angel</p>
+    </section>
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

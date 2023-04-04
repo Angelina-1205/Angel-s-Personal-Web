@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42d9d0d3c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo_.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portofolio.html">Portofolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Angel's Personal Website</h1>
+            <p>Hello and Welcome!<br><b>I'm a Front-End Web Developer</b></p>
+            <a href="" class="hero-btn">Visit My Website To Know More</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <h1>About Me</h1>
+        <p>Get to Know More About Me</p>
+
+        <div class="row">
+            <div class="about_index-col">
+                <h1>Mayza Angelina Fatima</h1>
+                <p>Hello, it's me, Mayza Anglina Fatima. Some people call me Angel, some of them call me Enji, but I
+                    like the Angel one. I'm an Undergraduate Bachelor's student in Informatics Engineering Education
+                    from the Yogyakarta State University.</p>
+                <a href="" class="hero-btn red-btn">Get To Know More</a>
+            </div>
+            <div class="about_index-col">
+                <img src="img/profil.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio -->
+    <section class="portofolio">
+        <h1>Portofolio</h1>
+        <p>Here some of my Work</p>
+
+        <div class="row">
+            <div class="portofolio-col">
+                <img src="img/poster_3.jpg">
+                <div class="layer">
+                    <h3>POSTER</h3>
+                </div>
+            </div>
+            <div class="portofolio-col">
+                <img src="img/ui landing page_2.png">
+                <div class="layer">
+                    <h3>UI DESIGN</h3>
+                </div>
+            </div>
+            <div class="portofolio-col">
+                <img src="img/poster_2.png">
+                <div class="layer">
+                    <h3>POSTER</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Square -->
+    <section class="square">
+        <h1>My Blog</h1>
+        <p>Go check on my Blog</p>
+
+        <div class="row">
+            <div class="square-col">
+                <h3>Beautiful Websites</h3>
+                <p>On this page, we’ll provide you with six tips for creating beautiful websites. Keep reading to learn
+                    more about how to create a visually appealing and functional website for your audience.</p>
+            </div>
+            <div class="square-col">
+                <h3>Principles for Visually Appealing Websites</h3>
+                <p>Everyone and their grandfather (and dog) seems to have made a website these days. The Web is getting
+                    more crowded by the day, with literally dozens of websites being added as you read this article. It
+                    is becoming harder and harder to get noticed among the masses.</p>
+            </div>
+            <div class="square-col">
+                <h3>Make a Beautiful Website</h3>
+                <p>It might not seem like such a big deal, but the way your website looks matters a lot. In a recent
+                    study by Forrester Research, they found that a well designed interface can increase conversion rates
+                    on your website by 200%.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+        <h1>Blog</h1>
+        <p>Here some of my Blog</p>
+
+        <div class="row">
+            <div class="blog-col">
+                <img src="img/blog.jpg">
+                <h3>Beautiful Websites</h3>
+                <p>On this page, we’ll provide you with six tips for creating beautiful websites. Keep reading to learn
+                    more about how to create a visually appealing and functional website for your audience. You can't
+                    have amazing web design without spiffy forms.</p>
+            </div>
+            <div class="blog-col">
+                <img src="img/blog_2.jpg">
+                <h3>Visually Appealing Websites</h3>
+                <p>Everyone seems to have made a website these days. The Web is getting
+                    more crowded by the day, with literally dozens of websites being added as you read this article. It
+                    is becoming harder and harder to get noticed among the masses.</p>
+            </div>
+            <div class="blog-col">
+                <img src="img/blog_3.jpg">
+                <h3>Make a Beautiful Website</h3>
+                <p>It might not seem like such a big deal, but the way your website looks matters a lot. In a recent
+                    study by Forrester Research, they found that a well designed interface can increase conversion rates
+                    on your website by 200%.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About</h4>
+        <p>Thank You for coming to my Website. Go visit my other Website.</p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Angel</p>
+    </section>
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
