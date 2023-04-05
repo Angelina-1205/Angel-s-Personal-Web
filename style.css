@@ -161,6 +161,40 @@ h3 {
     }
 }
 
+/* square 2 */
+.square2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.row {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.square2-col {
+    flex-basis: 31%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.square2-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
 /* portofolio */
 .portofolio {
     width: 80%;
@@ -176,8 +210,8 @@ h3 {
     overflow: hidden;
 }
 .portofolio-col img {
-    width: 100%;
-    display: block;
+    width: 80%;
+    display: inline-block;
 }
 .layer {
     background: transparent;
